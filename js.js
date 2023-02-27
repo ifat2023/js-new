@@ -127,7 +127,55 @@ function ex3() {
     }
   
   }
-  
+
+     //Exs.8
+     function ex8() {
+        let students = parseInt(prompt("Please enter the number of students"));
+      
+        let security = Math.floor(students / 30);
+      
+        if (students % 30 > 0) {
+          security++;
+        }
+      
+        document.write(" A number of security guards " + security);
+      
+        const first_Aid = Math.floor(students / 50);
+        document.write(" number of medics " + first_Aid);
+      
+        const medic = Math.floor(students / 100);
+        document.write(" number of medics " + medic);
+      }
+
+         //Exs.9
+     function ex9() {
+
+     let day = prompt("Please enter one of the day in the week");
+     const foo = "Thursday"
+
+     if (foo === "Thursday" || foo === "thursday" || foo == 5 ) {
+    document.write("!Thursday! Yay")
+}
+    else{
+    document.write("wrong")
+}
+     }
+
+  //Exs.10
+  function ex10(){
+    let BMI = prompt("Please enter your BMI");
+
+if(BMI <= 18 ){
+   document.write(" the BMI is too low.")
+}
+else if (BMI >=25){
+    document.write(" the BMI Too high")
+}
+else {
+    document.write(" the BMI is normal")
+}
+  }
+
   function ex12() {
   let num = 100,
   result =0 

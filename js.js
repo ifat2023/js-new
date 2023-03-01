@@ -1,15 +1,20 @@
 //class room 
-
+function writeToResult(text){
+    var element= document.getElementById("result");
+    element.innerHTML+=text;
+ 
+    }
 
 //Exs.1
 function ex1() {
-    let num = parseInt(prompt("please enter a number"))
+    let num = parseInt(prompt("please enter a number to check if is even or odd"))
 if (num % 2==0) {
-    document.write("The number is even");
+   writeToResult("The number is even");
 }
 else {
-    document.write("The number is odd");
+    writeToResult("The number is odd");
 }
+writeToResult("<hr>") ;
 }
 
 
@@ -25,7 +30,8 @@ function ex2 () {
     let sum = num1 + num2 + num3 + num4;
     average = sum / 4;
   
-    document.write(average);
+    writeToResult(average);
+    writeToResult("<hr>") ;
 }
  
 //Exs.3
@@ -38,10 +44,11 @@ function ex3() {
     let score2 = prompt("please enter yore score");
   
     if (Number(score) > Number(score2)) {
-      document.write(player + " " + score);
+        writeToResult(player + " " + score);
     } else {
-      document.write(player2 + " " + score2);
+        writeToResult(player2 + " " + score2);
     }
+    writeToResult("<hr>") ;
   }
 
   //Exs.4
@@ -49,14 +56,15 @@ function ex3() {
     let hour = prompt("please give me an hour from 5AM to 23PM");
 
     if (hour >= 5 && hour <= 11  ){
-    document.write("Good morning")
+        writeToResult("Good morning")
     }
     else if (hour >=12 && hour <=17 ){
-        document.write("Good afternoon")
+        writeToResult("Good afternoon")
     }
     else if (hour >=18 && hour <= 23){
-    document.write("good evening")
+        writeToResult("good evening")
     }
+    writeToResult("<hr>") ;
   }
 
    //Exs.5
@@ -82,9 +90,10 @@ function ex3() {
       total = evening - tax * evening - salary;
     }
   
-    document.write(
+    writeToResult(
       " Net profit from operating the train line in the morning " + total
     );
+    writeToResult("<hr>") ;
    }
 
    //Exs.6
@@ -98,17 +107,18 @@ function ex3() {
     const fiftyback = Math.floor(priceAfterDiscount-(19*50))
 
     if (payments > 24) {
-      return document.write("u can take only till 24 payments ");
+      return writeToResult("u can take only till 24 payments ");
     }
     else if(payments == 19) {
-        document.write(  " The price of the car after the discount: " +  priceAfterDiscount +
+        writeToResult(  " The price of the car after the discount: " +  priceAfterDiscount +
          " you receives NIS 50 back for each payment: " 
         +  fiftyback + " ." + " Number of payments: " + total)
    }
     else {
-        document.write(" The price of the car after the discount: " +
+        writeToResult(" The price of the car after the discount: " +
         priceAfterDiscount + " Number of payments: " + total );
      }   
+     writeToResult("<hr>") ;
   }
 
 
@@ -117,15 +127,15 @@ function ex3() {
     let peoples = prompt("amount passengers of bus stop");
 
     if (peoples === 12 ){
-      document.write("a bus is full and leave the station")
+        writeToResult("a bus is full and leave the station")
     }
     else if (peoples < 12) {
-      document.write("not enough people to drive ")
+        writeToResult("not enough people to drive ")
     }
     else if (peoples > 12) {
-      document.write("the bus is going out " + (Math.abs(peoples-12)) + " wating for another taxi ")
+        writeToResult("the bus is going out " + (Math.abs(peoples-12)) + " wating for another taxi ")
     }
-  
+    writeToResult("<hr>") ;
   }
 
      //Exs.8
@@ -138,27 +148,29 @@ function ex3() {
           security++;
         }
       
-        document.write(" A number of security guards " + security);
+        writeToResult(" A number of security guards " + security);
       
         const first_Aid = Math.floor(students / 50);
-        document.write(" number of medics " + first_Aid);
+        writeToResult(" number of medics " + first_Aid);
       
         const medic = Math.floor(students / 100);
-        document.write(" number of medics " + medic);
+        writeToResult(" number of medics " + medic);
+
+        writeToResult("<hr>") ;
       }
 
          //Exs.9
      function ex9() {
 
-     let day = prompt("Please enter one of the day in the week");
-     const foo = "Thursday"
-
-     if (foo === "Thursday" || foo === "thursday" || foo == 5 ) {
-    document.write("!Thursday! Yay")
+     let foo= prompt("Please enter one of the day in the week");
+     
+     if (foo === "Thursday" ||foo === "thursday" || foo == 5 ) {
+        writeToResult("!Thursday! Yay")
 }
     else{
-    document.write("wrong")
+        writeToResult("wrong")
 }
+writeToResult("<hr>") ;
      }
 
   //Exs.10
@@ -166,30 +178,99 @@ function ex3() {
     let BMI = prompt("Please enter your BMI");
 
 if(BMI <= 18 ){
-   document.write(" the BMI is too low.")
+    writeToResult(" the BMI is too low.")
 }
 else if (BMI >=25){
-    document.write(" the BMI Too high")
+    writeToResult(" the BMI Too high")
 }
 else {
-    document.write(" the BMI is normal")
+    writeToResult(" the BMI is normal")
 }
+writeToResult("<hr>") ;
   }
 
+  //Exs.11
+  function ex11() {
+
+  }
+
+  //Exs.12
   function ex12() {
   let num = 100,
   result =0 
   result= Math.sqrt(num)
-  document.write(result)
+  writeToResult(result)
+  writeToResult("<hr>") ;
+  }
+
+  //Exs.13
+  function ex13() {
+let btn1 = document.querySelector(".btn1");
+let btn2 = document.querySelector(".btn2");
+writeToResult("display")
+writeToResult("<hr>") ;
   }
 
 
-  function ex16 () {
-    let x = 4;
-for (let i = 0; i < array; i++) {
-    const element = array[i];
-    
+ //Exs.14
+ function ex14() {
+    open.window
+          }
+        
+ //Exs.15
+ function ex15() {
+let text = document.querySelector("date");
+let date = new Date();
+let hour = date.getHours();
+let minuts = date.getMinutes();
+let day = date.getDate();
+let month = date.getMonth()+1;
+let year = date.getFullYear();
+writeToResult(`The hour is: ${hour}:${minuts} - the date is: ${day}/${month}/${year} `)
+writeToResult("<hr>") ;
 }
 
+//Exs.16
+function ex16 () {
+    let num = prompt("please enter a number")
+    
+    for (let i = 0; i < num-1; i++) {
+        writeToResult("hello ,")   
+   }
+        writeToResult("hello")  
+        writeToResult("<hr>") ;
+   }
 
+   //Exs.17
+function ex17 () {
+    for (let i = 0; i <= 10; i++) {
+        writeToResult("smile ") 
+   
+    }
+
+    writeToResult("<hr>") ;
+}
+
+   //Exs.18
+   function ex18 () {
+    let a = Number(prompt("please enter first number"));
+    let b = Number(prompt("please enter second number"));
+
+    if (a>b) {
+        alert("The largest number is " + a)
+    }
+    else {
+        alert("The largest number is " + b)
+    }
+   }
+
+  //Exs.19
+  function ex19 () {
+let tip = Number(prompt("How many percent to put?"));
+let amount= Number (prompt ("Specify the amount in the account"))
+
+const total = math.floor(tip * amount)
+
+writeToResult(total)
+writeToResult("<hr>") ;
   }

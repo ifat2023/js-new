@@ -47,3 +47,9 @@ button:hover {
 .text-center{
     text-align: center;
 }
+
+#result{
+    border: solid 2px black;
+    text-align: center;
+    font-size: 25px;
+}

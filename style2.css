@@ -53,3 +53,12 @@ button:hover {
     text-align: center;
     font-size: 25px;
 }
+
+.btn2 {
+    display: none;
+    background-color: red;
+}
+
+.showBtn {
+    display: inline;
+}

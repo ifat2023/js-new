@@ -205,18 +205,20 @@ writeToResult("<hr>") ;
 
   //Exs.13
   function ex13() {
-let btn1 = document.querySelector(".btn1");
+
 let btn2 = document.querySelector(".btn2");
-writeToResult("display")
-writeToResult("<hr>") ;
+btn2.classList.add("showBtn");
+
   }
 
 
  //Exs.14
  function ex14() {
     open.window
+    
           }
-        
+  
+          
  //Exs.15
  function ex15() {
 let text = document.querySelector("date");
@@ -266,11 +268,34 @@ function ex17 () {
 
   //Exs.19
   function ex19 () {
-let tip = Number(prompt("How many percent to put?"));
-let amount= Number (prompt ("Specify the amount in the account"))
+let num = Number (prompt ("How many percent from the account to put?"))
+let amount = Number (prompt ("Specify the amount you need to pay from the account"))
+const tip = (num/100)
+const total = Math.floor((tip * amount) + amount)
 
-const total = math.floor(tip * amount)
-
-writeToResult(total)
+writeToResult(`the amount you need to pay : ${amount} with the  tip: ${tip} = the total is:${total} `);
 writeToResult("<hr>") ;
   }
+
+    //Exs.21
+    function ex21 () {
+let quotes = [" The key to success is to start before you are ready " , " Your only limit is your mind ",
+" Happiness is a journey, not a destination ", "Once you choose hope, everything is possible " , 
+" Life is meant to be enjoyed, not endured " ," Not everyone will understand your journey, and that’s okay, it’s not for them, " ,
+" When it rains, look for the rainbows, when it’s dark look for the stars " , "Learn to trust the journey even when you don’t understand it ",
+"Not all storms come to disrupt your life. Some come to clear your path", " The biggest communication problem is we do not listen to understand but to reply "
+]
+
+        let randomNumber = Math.floor(Math.random() * (quotes.length))
+        document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber]
+        writeToResult("<hr>") ;
+    }
+
+
+  //Exs.22
+  function ex22 (){
+    const students = ["Ifat", "Ran", "Harel", "Tahel", "Refael"];
+    writeToResult(students)
+    writeToResult("<hr>") ;
+  }
+

@@ -45,7 +45,7 @@ function ex3() {
   
     if (Number(score) > Number(score2)) {
         writeToResult(player + " " + score);
-    } else {
+    } else{
         writeToResult(player2 + " " + score2);
     }
     writeToResult("<hr>") ;
@@ -283,7 +283,7 @@ let quotes = [" The key to success is to start before you are ready " , " Your o
 " Happiness is a journey, not a destination ", "Once you choose hope, everything is possible " , 
 " Life is meant to be enjoyed, not endured " ," Not everyone will understand your journey, and that’s okay, it’s not for them, " ,
 " When it rains, look for the rainbows, when it’s dark look for the stars " , "Learn to trust the journey even when you don’t understand it ",
-"Not all storms come to disrupt your life. Some come to clear your path", " The biggest communication problem is we do not listen to understand but to reply "
+"Not all storms come to disrupt your life, Some come to clear your path", " The biggest communication problem is we do not listen to understand but to reply "
 ]
 
         let randomNumber = Math.floor(Math.random() * (quotes.length))
